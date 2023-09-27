@@ -1,0 +1,8 @@
+si es un fetch primero el fech luego el while 
+los valores iniciales con default
+WHILE DOS FETCH
+LOOP UN FETCH
+LO PRIMERO VALIDAR VALORES DE ENTRADA
+FECHA DATE('AÑO-MES-DIA')
+funcion sysdate para sacar fecha actual
+una variable que sea de entrada a la funcion no se puede modificar

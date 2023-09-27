@@ -1,0 +1,1 @@
+Esta es la cadena de texto que se va a escribir en el archivo*

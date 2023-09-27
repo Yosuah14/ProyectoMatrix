@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="LOG_DIR">logs</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console">
+            <PatternLayout pattern="%d [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        
+        <RollingFile
+            name="rollingFile"
+            fileName="${LOG_DIR}/miAppDeEjemplo.log"
+            filePattern="${LOG_DIR}/miAppDeEjemplo.%i.log.gz"
+            ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100MB" />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.agustincrespo.ejemplologger.Clase1" level="trace" additivity = "false">
+            <AppenderRef ref="rollingFile"/>
+        </Logger>
+        <Logger name="com.agustincrespo.ejemplologger.Clase2" level="trace" additivity = "false">
+            <AppenderRef ref="rollingFile"/>
+        </Logger>
+        <Logger name="com.agustincrespo.ejemplologger.subpkg.Clase3" level="trace" additivity = "false">
+            <AppenderRef ref="rollingFile"/>
+        </Logger>
+        <Root level="trace">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="rollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>

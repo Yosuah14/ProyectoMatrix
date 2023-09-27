@@ -1,0 +1,15 @@
+com\agustincrespo\u1\ficheros\C_CrearFiles.class
+com\agustincrespo\u1\ficheros\texto\C_EscribirTextFileCharArray.class
+com\agustincrespo\u1\ficheros\texto\D_LeerTextFileCharArr.class
+com\agustincrespo\u1\ficheros\A_VerDirectorio.class
+com\agustincrespo\u1\ficheros\texto\C_EscribirTextFileStrArr.class
+com\agustincrespo\u1\ficheros\texto\E_EscribirTextFileBuf.class
+com\agustincrespo\u1\ficheros\texto\A_LeerTextFileChar.class
+com\agustincrespo\u1\ficheros\texto\G_EscribirTextFileBuffer.class
+com\agustincrespo\u1\ficheros\texto\E_EscribirTextFileBufCharArr.class
+com\agustincrespo\u1\ficheros\texto\D_LeerTextFileBuf.class
+com\agustincrespo\u1\ficheros\B_VerInfoArchivo.class
+com\agustincrespo\u1\ficheros\texto\F_LeerTextFileBuffer.class
+com\agustincrespo\u1\ficheros\texto\G_EscribirTextFileBufferOptimizado2.class
+com\agustincrespo\u1\ficheros\texto\B_EscribirTextFileChar.class
+com\agustincrespo\u1\ficheros\texto\G_EscribirTextFileBufferOptimizado.class

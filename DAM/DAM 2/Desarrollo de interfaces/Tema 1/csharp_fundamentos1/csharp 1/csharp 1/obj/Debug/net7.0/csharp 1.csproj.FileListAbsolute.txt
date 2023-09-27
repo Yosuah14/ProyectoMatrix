@@ -1,0 +1,14 @@
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\bin\Debug\net7.0\csharp 1.exe
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\bin\Debug\net7.0\csharp 1.deps.json
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\bin\Debug\net7.0\csharp 1.runtimeconfig.json
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\bin\Debug\net7.0\csharp 1.dll
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\bin\Debug\net7.0\csharp 1.pdb
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\obj\Debug\net7.0\csharp 1.GeneratedMSBuildEditorConfig.editorconfig
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\obj\Debug\net7.0\csharp 1.AssemblyInfoInputs.cache
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\obj\Debug\net7.0\csharp 1.AssemblyInfo.cs
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\obj\Debug\net7.0\csharp 1.csproj.CoreCompileInputs.cache
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\obj\Debug\net7.0\csharp 1.dll
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\obj\Debug\net7.0\refint\csharp 1.dll
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\obj\Debug\net7.0\csharp 1.pdb
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\obj\Debug\net7.0\csharp 1.genruntimeconfig.cache
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Csharp_fundamentos1\csharp 1\csharp 1\obj\Debug\net7.0\ref\csharp 1.dll

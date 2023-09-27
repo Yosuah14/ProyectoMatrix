@@ -1,0 +1,13 @@
+2023-09-13 15:48:11 [main] TRACE Entrada a la clase principal
+2023-09-13 15:48:11 [main] TRACE Valor antiguo de v: 0
+2023-09-13 15:48:11 [main] TRACE Valor nuevo de v: 0
+2023-09-13 15:48:11 [main] TRACE Valor antiguo de v: 0
+2023-09-13 15:48:11 [main] TRACE Valor nuevo de v: 2147483647
+2023-09-13 15:48:11 [main] TRACE Valor antiguo de X: 0
+2023-09-13 15:48:11 [main] TRACE Valor nuevo de X: -2147483648
+2023-09-13 15:48:11 [main] TRACE Valor antiguo de v: 2147483647
+2023-09-13 15:48:11 [main] TRACE Valor nuevo de v: 123456789
+2023-09-13 15:48:11 [main] TRACE Inicio de la división entre 0
+2023-09-13 15:48:11 [main] ERROR / by zero
+2023-09-13 15:48:11 [main] TRACE Finalización de la división entre 0
+2023-09-13 15:48:11 [main] TRACE Finalización del programa

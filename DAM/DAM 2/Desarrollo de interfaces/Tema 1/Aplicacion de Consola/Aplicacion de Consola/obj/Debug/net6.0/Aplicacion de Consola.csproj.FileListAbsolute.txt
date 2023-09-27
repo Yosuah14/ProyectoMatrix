@@ -1,0 +1,14 @@
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\bin\Debug\net6.0\Aplicacion de Consola.exe
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\bin\Debug\net6.0\Aplicacion de Consola.deps.json
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\bin\Debug\net6.0\Aplicacion de Consola.runtimeconfig.json
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\bin\Debug\net6.0\Aplicacion de Consola.dll
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\bin\Debug\net6.0\Aplicacion de Consola.pdb
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\obj\Debug\net6.0\Aplicacion de Consola.GeneratedMSBuildEditorConfig.editorconfig
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\obj\Debug\net6.0\Aplicacion de Consola.AssemblyInfoInputs.cache
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\obj\Debug\net6.0\Aplicacion de Consola.AssemblyInfo.cs
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\obj\Debug\net6.0\Aplicacion de Consola.csproj.CoreCompileInputs.cache
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\obj\Debug\net6.0\Aplicacion de Consola.dll
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\obj\Debug\net6.0\refint\Aplicacion de Consola.dll
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\obj\Debug\net6.0\Aplicacion de Consola.pdb
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\obj\Debug\net6.0\Aplicacion de Consola.genruntimeconfig.cache
+D:\DAM 2\Desarrollo de interfaces\Tema 1\Aplicacion de Consola\Aplicacion de Consola\obj\Debug\net6.0\ref\Aplicacion de Consola.dll
