@@ -44,8 +44,8 @@ namespace MATRIX_JOSE
                 matrix[latitude, longitud] = matriz[i, 0];
                 
             }
-            matrix[neo.latitude, neo.length]= "NEOO";
-            matrix[smith.latitude, smith.length] = "SMTH";
+            matrix[neo.latitude, neo.length]= neo.namep;
+            matrix[smith.latitude, smith.length] = smith.namep;
 
             return new Matrix(matrix);
         }

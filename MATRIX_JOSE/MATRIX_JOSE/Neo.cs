@@ -9,7 +9,10 @@ namespace MATRIX_JOSE
     public class Neo : Personaje
     {
         private bool elegido;
-        public Neo(string namep, string namec, int age, int code, int deathPer, int length, int latitude, bool elegido) : base(namep, namec, age, code, deathPer = 0, length, latitude)
+        public Neo()
+        {
+        }
+        public Neo(string namep, string namec, int age, string code, int deathPer, int length, int latitude, bool elegido) : base(namep, namec, age, code, deathPer = 0, length, latitude)
         {
             this.elegido = elegido;
         }

@@ -8,17 +8,22 @@ namespace MATRIX_JOSE
 {
     public class Personaje
     {
-        private string namep { get; set; }
+        
+        public string namep { get; set; }
         private string namec { get; set; }
         private int age { get; set; }
         public int deathPer { get; set; }
-        public int code { get; set; }
+        public string code { get; set; }
 
         public int length { get; set; }
 
         public int latitude { get; set; }
+        public Personaje()
+        {
 
-        public Personaje(string namep, string namec, int age, int code, int deathPer, int length, int latitude)
+        }
+
+        public Personaje(string namep, string namec, int age, string code, int deathPer, int length, int latitude)
         {
             this.namep = namep;
             this.namec = namec;

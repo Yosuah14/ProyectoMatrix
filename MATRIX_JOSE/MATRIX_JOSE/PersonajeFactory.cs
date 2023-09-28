@@ -31,10 +31,10 @@ namespace MATRIX_JOSE
             int age = RandomClass.numale(1, 75);
           
             
-            deathPer = RandomClass.numale(10, 70);
+            deathPer = RandomClass.numale(40,90);
             
-            int code = RandomClass.numale(100, coden);
-            coden = code - 1;
+            string code = "C"+ RandomClass.numale(100, coden).ToString();
+            
             int length = RandomClass.numale(0, 14);
             int latitude = RandomClass.numale(0, 14);
             Personaje p = new Personaje(namep, namec, age, code, deathPer, length, latitude);
@@ -64,7 +64,7 @@ namespace MATRIX_JOSE
                 // Verificar si cIdsAleatorios[i, 0] contiene el código del personaje
                 if (cIdsAleatorios[i, 0] == null || !cIdsAleatorios[i, 0].Contains("C" + personajes[i].code))
                 {
-                    cIdsAleatorios[i, 0] = "C" + personajes[i].code;
+                    cIdsAleatorios[i, 0] = personajes[i].code;
                     cIdsAleatorios[i, 1] = personajes[i].latitude.ToString();
                     cIdsAleatorios[i, 2] = personajes[i].length.ToString();
                     cIdsAleatorios[i, 3] = personajes[i].deathPer.ToString();

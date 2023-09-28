@@ -10,10 +10,20 @@ namespace MATRIX_JOSE
     {
         private int capInf;
 
-        public Smith(string namep, string namec, int age, int code, int deathPer, int length, int latitude, int capinf) : base(namep, namec, age, code, deathPer = 0, length, latitude)
+        public Smith()
+        {
+        }
+
+        public Smith(string namep, string namec, int age, string code, int deathPer, int length, int latitude, int capinf) : base(namep, namec, age, code, deathPer = 0, length, latitude)
         {
             this.capInf = capinf;
         }
+        public int infectar()
+        {
+            int inf = RandomClass.numale(1, 5);
+            return inf = this.capInf;
+        }
+
 
 
     }

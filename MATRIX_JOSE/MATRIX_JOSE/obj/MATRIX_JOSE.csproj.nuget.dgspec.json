@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jose1\\Source\\Repos\\ProyectoMatrix\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj": {}
+    "C:\\Users\\jose1\\Desktop\\PoryectoMatrixJoseDAM\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jose1\\Source\\Repos\\ProyectoMatrix\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj": {
+    "C:\\Users\\jose1\\Desktop\\PoryectoMatrixJoseDAM\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jose1\\Source\\Repos\\ProyectoMatrix\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
+        "projectUniqueName": "C:\\Users\\jose1\\Desktop\\PoryectoMatrixJoseDAM\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
         "projectName": "MATRIX_JOSE",
-        "projectPath": "C:\\Users\\jose1\\Source\\Repos\\ProyectoMatrix\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
+        "projectPath": "C:\\Users\\jose1\\Desktop\\PoryectoMatrixJoseDAM\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
         "packagesPath": "C:\\Users\\jose1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jose1\\Source\\Repos\\ProyectoMatrix\\MATRIX_JOSE\\MATRIX_JOSE\\obj\\",
+        "outputPath": "C:\\Users\\jose1\\Desktop\\PoryectoMatrixJoseDAM\\MATRIX_JOSE\\MATRIX_JOSE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jose1\\AppData\\Roaming\\NuGet\\NuGet.Config",

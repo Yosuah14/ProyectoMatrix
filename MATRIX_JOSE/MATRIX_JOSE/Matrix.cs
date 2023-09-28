@@ -31,6 +31,11 @@ namespace MATRIX_JOSE
         get { return arrayDeStrings; }
         set { arrayDeStrings = value; }
     }
+        public string[,] eliminarCiu(string[,] matrix)
+        {
+
+            return matrix;
+        }
 
 
 }
