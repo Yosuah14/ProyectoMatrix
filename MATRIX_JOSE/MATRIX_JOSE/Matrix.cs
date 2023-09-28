@@ -32,5 +32,6 @@ namespace MATRIX_JOSE
         set { arrayDeStrings = value; }
     }
 
+
 }
 }

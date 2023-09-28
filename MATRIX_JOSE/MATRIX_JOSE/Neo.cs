@@ -13,5 +13,15 @@ namespace MATRIX_JOSE
         {
             this.elegido = elegido;
         }
+        public void esElegido()
+        {
+            Random random = new Random();
+            int resultado = random.Next(0, 2); // Genera un número aleatorio entre 0 y 1 (0 inclusive, 2 excluido)
+
+            this.elegido = (resultado == 1); // Cambia el valor de elegido a true si el resultado es 1, false si es 0
+        }
+
+
+
     }
 }
