@@ -14,7 +14,7 @@ namespace MATRIX_JOSE
             {
                 for (int j = 0; j < matriz.GetLength(1); j++)
                 {
-                    if (matriz[i, j] != null && matriz[i, j].Contains('C'))
+                    if (matriz[i, j] != null && (matriz[i, j].Contains('C')|| matriz[i, j].Contains('S')|| matriz[i, j].Contains('N')))
                     {
                         Console.Write("[" + matriz[i, j] + "]"); // Imprimir "." si no hay un personaje en esa posición
                         Console.Write("   ");

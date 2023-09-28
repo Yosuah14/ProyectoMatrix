@@ -33,6 +33,10 @@ namespace MATRIX_JOSE
             this.length = length;
             this.latitude = latitude;
         }
+        public static bool SuperaPorcentajeMuerte(int deathPer)
+        {
+            return deathPer > 70;
+        }
 
 
     }

@@ -22,7 +22,7 @@ namespace MATRIX_JOSE
             return ciudad;
 
         }
-        private Personaje generarPersonaje(string[,] matrix)
+        private Personaje generarPersonaje()
         {
             int coden = 1000;
             int deathPer;
@@ -40,38 +40,37 @@ namespace MATRIX_JOSE
             Personaje p = new Personaje(namep, namec, age, code, deathPer, length, latitude);
             return p;
         }
-        public Personaje[] Generar200Personajes(string[,] matrix)
+        public List<Personaje> Generar200Personajes()
         {
-            Personaje[] personajes = new Personaje[200];
+            List<Personaje> personajes = new List<Personaje>();
 
             for (int i = 0; i < 200; i++)
             {
-                Personaje personaje = generarPersonaje(matrix);
-                personajes[i] = personaje;
+                Personaje personaje = generarPersonaje();
+                personajes.Add(personaje);
             }
 
             return personajes;
         }
-        public string[,] GenerarCIdsAleatorios(Personaje[] personajes)
+        public List<Personaje> Generar30PersonajesAleatorios(List<Personaje> personajes200)
         {
-            const int F1 = 40;
-            const int C1 = 4;
+            List<Personaje> personajesAleatorios = new List<Personaje>();
+            Random rand = new Random();
 
-            string[,] cIdsAleatorios = new string[F1, C1]; // Matriz de 40 filas y 4 columnas
-
-            for (int i = 0; i < 40; i++)
+            for (int i = 0; i < 30; i++)
             {
-                // Verificar si cIdsAleatorios[i, 0] contiene el código del personaje
-                if (cIdsAleatorios[i, 0] == null || !cIdsAleatorios[i, 0].Contains("C" + personajes[i].code))
-                {
-                    cIdsAleatorios[i, 0] = personajes[i].code;
-                    cIdsAleatorios[i, 1] = personajes[i].latitude.ToString();
-                    cIdsAleatorios[i, 2] = personajes[i].length.ToString();
-                    cIdsAleatorios[i, 3] = personajes[i].deathPer.ToString();
-                }
+                // Generar un índice aleatorio dentro del rango de la lista de 200 personajes
+                int indiceAleatorio = rand.Next(personajes200.Count);
+
+                // Obtener el personaje aleatorio y agregarlo a la lista de personajes aleatorios
+                Personaje personajeAleatorio = personajes200[indiceAleatorio];
+                personajesAleatorios.Add(personajeAleatorio);
+
+                // Eliminar el personaje de la lista original
+                personajes200.RemoveAt(indiceAleatorio);
             }
 
-            return cIdsAleatorios;
+            return personajesAleatorios;
         }
 
 

@@ -17,4 +17,6 @@ pArray = p.Generar200Personajes(dimensiones);
 pCola = p.GenerarCIdsAleatorios(pArray);
 matrix = matrixf.InicializarMatrizConPersonajes(pCola,neo,smith);
 matrixf.ImprimirMatriz(matrix.MatrixArray);
+matrix.MatrixArray= matrix.eliminarCiu(matrix.MatrixArray,pCola);
+matrixf.ImprimirMatriz(matrix.MatrixArray);
 

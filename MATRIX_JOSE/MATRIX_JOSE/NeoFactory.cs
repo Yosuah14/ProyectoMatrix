@@ -11,6 +11,7 @@ namespace MATRIX_JOSE
     {
         public Neo generarNeo(string[,] matrix)
         {
+            
             int coden = 1000;
             int deathPer;
             string namep = "NEOO";

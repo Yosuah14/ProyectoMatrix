@@ -8,8 +8,8 @@ namespace MATRIX_JOSE
 {
     public class Matrix
     {
-        private string[,] matrix; // Atributo que es un array bidimensional de 15x15
-    private string[] arrayDeStrings; // Atributo que es un array de string de 20 elementos
+        public string[,] matrix; // Atributo que es un array bidimensional de 15x15
+        private string[] arrayDeStrings; // Atributo que es un array de string de 20 elementos
 
     // Constructor que toma argumentos para inicializar los atributos
     public Matrix(string[,] initialMatrix)
@@ -31,8 +31,22 @@ namespace MATRIX_JOSE
         get { return arrayDeStrings; }
         set { arrayDeStrings = value; }
     }
-        public string[,] eliminarCiu(string[,] matrix)
+        public string[,] eliminarCiu(string[,] matrix, string[,]elegidos)
         {
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                for (int j = 0; j < matrix.Length; j++)
+                {
+                    
+                        if (Personaje.SuperaPorcentajeMuerte(int.Parse(matrix[i, j])) == true)
+                        {
+                            matrix[i, j] = "";
+                        }
+
+                    
+
+                }
+            }
 
             return matrix;
         }

@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jose1\\.nuget\\packages\\": {}
+    "C:\\Users\\Alumno\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jose1\\Desktop\\PoryectoMatrixJoseDAM\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\matrix\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
       "projectName": "MATRIX_JOSE",
-      "projectPath": "C:\\Users\\jose1\\Desktop\\PoryectoMatrixJoseDAM\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
-      "packagesPath": "C:\\Users\\jose1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jose1\\Desktop\\PoryectoMatrixJoseDAM\\MATRIX_JOSE\\MATRIX_JOSE\\obj\\",
+      "projectPath": "C:\\Users\\Alumno\\Desktop\\matrix\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
+      "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alumno\\Desktop\\matrix\\MATRIX_JOSE\\MATRIX_JOSE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jose1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
