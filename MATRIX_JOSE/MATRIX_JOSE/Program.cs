@@ -1,22 +1,23 @@
 ﻿using MATRIX_JOSE;
+using System.Collections.Generic;
+int cont=0;
 Neo neo;
 Smith smith;
 NeoFactory n = new NeoFactory();
 SmithFactory S = new SmithFactory();
-
-
+const int FILAS = 15;
+const int COLUMNAS = 15;
+string[,] dimensiones = new string[FILAS, COLUMNAS];
 MatrixFactory matrixf = new MatrixFactory();
-string[,] dimensiones = new string[15, 15];
 Matrix matrix = new Matrix(dimensiones);
 PersonajeFactory p = new PersonajeFactory();
 neo = n.generarNeo(dimensiones);
 smith=S.generarSmith(dimensiones);
-string[,] pCola;
-Personaje[] pArray;
-pArray = p.Generar200Personajes(dimensiones);
-pCola = p.GenerarCIdsAleatorios(pArray);
-matrix = matrixf.InicializarMatrizConPersonajes(pCola,neo,smith);
+List<Personaje> personajes;
+List<Personaje> elegidos;
+personajes = p.Generar200Personajes();
+elegidos = p.Generar30PersonajesAleatorios(personajes,elegidos);
+matrix = matrixf.InicializarMatrizConPersonajes(elegidos,neo,smith);
 matrixf.ImprimirMatriz(matrix.MatrixArray);
-matrix.MatrixArray= matrix.eliminarCiu(matrix.MatrixArray,pCola);
-matrixf.ImprimirMatriz(matrix.MatrixArray);
+
 

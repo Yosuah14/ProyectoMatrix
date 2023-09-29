@@ -11,46 +11,43 @@ namespace MATRIX_JOSE
         public string[,] matrix; // Atributo que es un array bidimensional de 15x15
         private string[] arrayDeStrings; // Atributo que es un array de string de 20 elementos
 
-    // Constructor que toma argumentos para inicializar los atributos
-    public Matrix(string[,] initialMatrix)
-    {
-        matrix = initialMatrix;
-
-    }
-
-    // Getter y Setter para el atributo 'matrix'
-    public string[,] MatrixArray
-    {
-        get { return matrix; }
-        set { matrix = value; }
-    }
-
-    // Getter y Setter para el atributo 'arrayDeStrings'
-    public string[] ArrayDeStrings
-    {
-        get { return arrayDeStrings; }
-        set { arrayDeStrings = value; }
-    }
-        public string[,] eliminarCiu(string[,] matrix, string[,]elegidos)
+        // Constructor que toma argumentos para inicializar los atributos
+        public Matrix(string[,] initialMatrix)
         {
-            for (int i = 0; i < matrix.Length; i++)
-            {
-                for (int j = 0; j < matrix.Length; j++)
-                {
-                    
-                        if (Personaje.SuperaPorcentajeMuerte(int.Parse(matrix[i, j])) == true)
-                        {
-                            matrix[i, j] = "";
-                        }
+            matrix = initialMatrix;
 
-                    
-
-                }
-            }
-
-            return matrix;
         }
 
+        // Getter y Setter para el atributo 'matrix'
+        public string[,] MatrixArray
+        {
+            get { return matrix; }
+            set { matrix = value; }
+        }
 
+        // Getter y Setter para el atributo 'arrayDeStrings'
+        public string[] ArrayDeStrings
+        {
+            get { return arrayDeStrings; }
+            set { arrayDeStrings = value; }
+        }
+        public List<Personaje> EliminarCiu(List<Personaje> elegidos)
+        {
+            int cont = 0;
+            for (int i = elegidos.Count - 1; i >= 0; i--)
+            {
+                if (Personaje.SuperaPorcentajeMuerte(elegidos[i].deathPer))
+                {
+                    elegidos[i].namep = "";
+
+                    cont++;
+                }
+            }
+            Console.WriteLine("Han muerto " + cont + " personajes");
+
+            return elegidos; // Asegúrate de que 'matrix' esté definido en tu alcance actual
+        }
+
+    }
 }
-}
+

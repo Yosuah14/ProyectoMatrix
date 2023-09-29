@@ -29,12 +29,12 @@ namespace MATRIX_JOSE
             string namep = generarNombre();
             string namec = generarCiudad();
             int age = RandomClass.numale(1, 75);
-          
-            
-            deathPer = RandomClass.numale(40,90);
-            
-            string code = "C"+ RandomClass.numale(100, coden).ToString();
-            
+
+
+            deathPer = RandomClass.numale(40, 90);
+
+            string code = "C" + RandomClass.numale(100, coden).ToString();
+
             int length = RandomClass.numale(0, 14);
             int latitude = RandomClass.numale(0, 14);
             Personaje p = new Personaje(namep, namec, age, code, deathPer, length, latitude);
@@ -54,11 +54,13 @@ namespace MATRIX_JOSE
         }
         public List<Personaje> Generar30PersonajesAleatorios(List<Personaje> personajes200)
         {
-            List<Personaje> personajesAleatorios = new List<Personaje>();
+
             Random rand = new Random();
+            List<Personaje> personajesAleatorios = new List<Personaje>();
 
             for (int i = 0; i < 30; i++)
             {
+
                 // Generar un índice aleatorio dentro del rango de la lista de 200 personajes
                 int indiceAleatorio = rand.Next(personajes200.Count);
 
@@ -66,12 +68,44 @@ namespace MATRIX_JOSE
                 Personaje personajeAleatorio = personajes200[indiceAleatorio];
                 personajesAleatorios.Add(personajeAleatorio);
 
+
                 // Eliminar el personaje de la lista original
                 personajes200.RemoveAt(indiceAleatorio);
             }
 
             return personajesAleatorios;
         }
+
+        public List<Personaje> RegenerarPersonajes(List<Personaje> personajes200, List<Personaje> elegidos)
+        {
+
+            Random rand = new Random();
+
+            for (int i = 0; i < 30; i++)
+            {
+                if (elegidos[i].namep.Equals(""))
+                {
+                    // Generar un índice aleatorio dentro del rango de la lista de 200 personajes
+                    int indiceAleatorio = rand.Next(personajes200.Count);
+
+                    // Obtener el personaje aleatorio y agregarlo a la lista de personajes aleatorios
+                    Personaje personajeAleatorio = personajes200[indiceAleatorio];
+                    elegidos.Add(personajeAleatorio);
+
+
+                    // Eliminar el personaje de la lista original
+                    personajes200.RemoveAt(indiceAleatorio);
+
+                }
+
+
+
+            }
+
+            return elegidos;
+
+        }
+
 
 
 
