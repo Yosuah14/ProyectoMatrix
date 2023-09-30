@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\Desktop\\PROYECTO_MATRIX\\PROYECTO_MATRIX\\CsharpJoseMatrix\\CsharpJoseMatrix\\CsharpJoseMatrix.csproj": {}
+    "C:\\Users\\jose1\\Desktop\\MATRIX\\PROYECTO_MATRIX\\CsharpJoseMatrix\\CsharpJoseMatrix\\CsharpJoseMatrix.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\Desktop\\PROYECTO_MATRIX\\PROYECTO_MATRIX\\CsharpJoseMatrix\\CsharpJoseMatrix\\CsharpJoseMatrix.csproj": {
+    "C:\\Users\\jose1\\Desktop\\MATRIX\\PROYECTO_MATRIX\\CsharpJoseMatrix\\CsharpJoseMatrix\\CsharpJoseMatrix.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\PROYECTO_MATRIX\\PROYECTO_MATRIX\\CsharpJoseMatrix\\CsharpJoseMatrix\\CsharpJoseMatrix.csproj",
+        "projectUniqueName": "C:\\Users\\jose1\\Desktop\\MATRIX\\PROYECTO_MATRIX\\CsharpJoseMatrix\\CsharpJoseMatrix\\CsharpJoseMatrix.csproj",
         "projectName": "CsharpJoseMatrix",
-        "projectPath": "C:\\Users\\Alumno\\Desktop\\PROYECTO_MATRIX\\PROYECTO_MATRIX\\CsharpJoseMatrix\\CsharpJoseMatrix\\CsharpJoseMatrix.csproj",
-        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\Desktop\\PROYECTO_MATRIX\\PROYECTO_MATRIX\\CsharpJoseMatrix\\CsharpJoseMatrix\\obj\\",
+        "projectPath": "C:\\Users\\jose1\\Desktop\\MATRIX\\PROYECTO_MATRIX\\CsharpJoseMatrix\\CsharpJoseMatrix\\CsharpJoseMatrix.csproj",
+        "packagesPath": "C:\\Users\\jose1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jose1\\Desktop\\MATRIX\\PROYECTO_MATRIX\\CsharpJoseMatrix\\CsharpJoseMatrix\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jose1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

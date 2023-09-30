@@ -30,7 +30,13 @@ namespace MATRIX_JOSE
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
+            Console.WriteLine();
         }
+        /*
+         * Metodo que mediante una lista de elegidos mete el codigo en la matrix de matrix para que pueda ser imrpimido
+         * 
+         * */
 
         public Matrix InicializarMatrizConPersonajes(List<Personaje> personajes200, Neo neo, Smith smith)
         {

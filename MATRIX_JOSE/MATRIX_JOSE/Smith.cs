@@ -24,7 +24,22 @@ namespace MATRIX_JOSE
             return inf = this.capInf;
         }
 
+        public Smith movimientoSmith(Neo n,Smith s)
+        {//comprobamos de primeras que ni neo ni smith son adyacentes
+            if ((s.latitude==n.latitude+1 && s.length==n.length+1)||(s.latitude == n.latitude - 1 && s.length == n.length-1) ||(s.latitude == n.latitude - 1 && s.length == n.length + 1) ||(s.latitude == n.latitude + 1 && s.length == n.length - 1)) {
+                Console.WriteLine("NEO Y SMITH SON ADYACENTES HAS QUE NEO NO SE MUEVA SMITH TAMPOCO");
+                //vemos si estan en la misma fila o columna para que smith se mueva en zig zag
+            }if (s.latitude == n.latitude|| s.length == n.length) {
+                //vemos aqui si la (pos)columna es mayor mas abajo o (pos)la fila es mayor mas a la derecha
+                if (s.latitude < n.latitude)
+                {
+                    s.latitude = s.latitude - 1;
+                    s.length = n.length-1
+                          ;    
 
+                }
+            }
+        }
 
     }
 }

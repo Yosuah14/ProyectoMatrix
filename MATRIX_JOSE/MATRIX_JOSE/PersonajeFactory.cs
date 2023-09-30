@@ -29,17 +29,16 @@ namespace MATRIX_JOSE
             string namep = generarNombre();
             string namec = generarCiudad();
             int age = RandomClass.numale(1, 75);
-
-
-            deathPer = RandomClass.numale(40, 90);
-
+            deathPer = RandomClass.numale(30, 90);
             string code = "C" + RandomClass.numale(100, coden).ToString();
-
             int length = RandomClass.numale(0, 14);
             int latitude = RandomClass.numale(0, 14);
             Personaje p = new Personaje(namep, namec, age, code, deathPer, length, latitude);
             return p;
         }
+        /*
+         * Metodo que genera personajes en una lista
+         * */
         public List<Personaje> Generar200Personajes()
         {
             List<Personaje> personajes = new List<Personaje>();
@@ -52,8 +51,12 @@ namespace MATRIX_JOSE
 
             return personajes;
         }
+        /*
+         * Metodo que de una lista de 200 personajes saca aleatoriamente 30 de ellos y los mete en una lista aparte
+         * */
         public List<Personaje> Generar30PersonajesAleatorios(List<Personaje> personajes200)
         {
+           
 
             Random rand = new Random();
             List<Personaje> personajesAleatorios = new List<Personaje>();
@@ -75,20 +78,24 @@ namespace MATRIX_JOSE
 
             return personajesAleatorios;
         }
+        /*
+         * Metodo que una vez se mueran los de la matriz de elegidos mete los restantes hasta llegar otra vez a 30
+         * */
 
-        public List<Personaje> RegenerarPersonajes(List<Personaje> personajes200, List<Personaje> elegidos)
+        public List<Personaje> RegenerarPersonajes(List<Personaje> personajes200, List<Personaje> elegidos,int cont)
         {
 
             Random rand = new Random();
+            
 
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < cont; i++)
             {
-                if (elegidos[i].namep.Equals(""))
-                {
-                    // Generar un índice aleatorio dentro del rango de la lista de 200 personajes
-                    int indiceAleatorio = rand.Next(personajes200.Count);
+                int indiceAleatorio = rand.Next(personajes200.Count);
 
-                    // Obtener el personaje aleatorio y agregarlo a la lista de personajes aleatorios
+
+                // Generar un índice aleatorio dentro del rango de la lista de 200 personajes
+                if (indiceAleatorio!=0)
+                {
                     Personaje personajeAleatorio = personajes200[indiceAleatorio];
                     elegidos.Add(personajeAleatorio);
 
@@ -98,7 +105,7 @@ namespace MATRIX_JOSE
 
                 }
 
-
+                // Obtener el personaje aleatorio y agregarlo a la lista de personajes aleatorios
 
             }
 

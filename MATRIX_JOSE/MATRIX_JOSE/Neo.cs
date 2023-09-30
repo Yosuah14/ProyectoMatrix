@@ -16,13 +16,28 @@ namespace MATRIX_JOSE
         {
             this.elegido = elegido;
         }
-        public void esElegido()
+        private bool esElegido()
         {
             Random random = new Random();
             int resultado = random.Next(0, 2); // Genera un número aleatorio entre 0 y 1 (0 inclusive, 2 excluido)
 
-            this.elegido = (resultado == 1); // Cambia el valor de elegido a true si el resultado es 1, false si es 0
+          return  (resultado == 1); // Cambia el valor de elegido a true si el resultado es 1, false si es 0
         }
+        public Neo moverNeo(Neo neo) {
+            neo.elegido = neo.esElegido();   
+            if (neo.esElegido())
+            {
+                neo.latitude= RandomClass.numale(0, 14);
+                neo.length = RandomClass.numale(0, 14);
+                Console.WriteLine("NEO ES ELEGIDO");
+            }
+            else
+            {
+                Console.WriteLine("NEO NO ES ELEGIDO");
+            }
+            return neo;
+        }
+
 
 
 

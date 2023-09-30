@@ -31,6 +31,9 @@ namespace MATRIX_JOSE
             get { return arrayDeStrings; }
             set { arrayDeStrings = value; }
         }
+        /*
+         * Metodo que de la lista de elegidos comprueba cual tiene la probabilidad de morir pone su nombre en nada para distingirlo
+         * */
         public List<Personaje> EliminarCiu(List<Personaje> elegidos)
         {
             int cont = 0;
@@ -38,14 +41,31 @@ namespace MATRIX_JOSE
             {
                 if (Personaje.SuperaPorcentajeMuerte(elegidos[i].deathPer))
                 {
-                    elegidos[i].namep = "";
-
+                    elegidos.RemoveAt(i); // Utiliza RemoveAt para eliminar por índice
                     cont++;
+                }
+                else
+                {
+                    elegidos[i].deathPer = elegidos[i].deathPer + 10;
                 }
             }
             Console.WriteLine("Han muerto " + cont + " personajes");
 
-            return elegidos; // Asegúrate de que 'matrix' esté definido en tu alcance actual
+            return elegidos;
+        }
+        public int contarMuertos(List<Personaje> elegidos)
+        {
+
+            int cont = 0;
+            for (int i = elegidos.Count - 1; i >= 0; i--)
+            {
+                if (Personaje.SuperaPorcentajeMuerte(elegidos[i].deathPer))
+                {
+                    cont++;
+                }
+            }
+           return cont;
+
         }
 
     }
