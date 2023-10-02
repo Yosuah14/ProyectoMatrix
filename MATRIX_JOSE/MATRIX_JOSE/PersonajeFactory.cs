@@ -29,7 +29,7 @@ namespace MATRIX_JOSE
             string namep = generarNombre();
             string namec = generarCiudad();
             int age = RandomClass.numale(1, 75);
-            deathPer = RandomClass.numale(30, 90);
+            deathPer = RandomClass.numale(40, 80);
             string code = "C" + RandomClass.numale(100, coden).ToString();
             int length = RandomClass.numale(0, 14);
             int latitude = RandomClass.numale(0, 14);

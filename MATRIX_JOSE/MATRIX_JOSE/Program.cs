@@ -1,9 +1,9 @@
 ﻿using MATRIX_JOSE;
 using System.Collections.Generic;
 int cont=0;
-int conts=0;
+int conts=1;
 int muertos = 0;
-int contSmith = 1;
+int contSmith = 0;
 Neo neo;
 Smith smith;
 NeoFactory n = new NeoFactory();
@@ -33,7 +33,7 @@ do
     if (conts%2==0)
     {
         smith = smith.movimientoSmith(neo, smith, elegidos, matrixf, matrix);
-        muertos = matrix.contarMuertos(elegidos);
+        //muertos = matrix.contarMuertos(elegidos);
         contSmith = 0;
         elegidos = matrix.EliminarCiu(elegidos, smith, conts,contSmith);
         contSmith = 1;
