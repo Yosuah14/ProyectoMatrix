@@ -34,28 +34,43 @@ namespace MATRIX_JOSE
         /*
          * Metodo que de la lista de elegidos comprueba cual tiene la probabilidad de morir pone su nombre en nada para distingirlo
          * */
-        public List<Personaje> EliminarCiu(List<Personaje> elegidos,Smith s,int conts)
+        public List<Personaje> EliminarCiu(List<Personaje> elegidos,Smith s,int conts,int contSmith)
         {
             int cont = 0;
-            for (int i = elegidos.Count - 1; i >= 0; i--)
+            if (conts % 2 == 0&&contSmith==0)
             {
-                if (Personaje.SuperaPorcentajeMuerte(elegidos[i].deathPer))
+                for (int i = elegidos.Count - 1; i >= 0; i--)
                 {
-                    elegidos.RemoveAt(i); // Utiliza RemoveAt para eliminar por índice
-                    cont++;
-                   // if(elegidos[i].latitude == s.latitude && elegidos[i].length == s.length&&conts==2)
-                   // {
-                     //   elegidos.RemoveAt(i); // Utiliza RemoveAt para eliminar por índice
-                      //  cont++;
+                    if (elegidos[i].latitude == s.latitude && elegidos[i].length == s.length && conts == 2)
+                    {
+                        elegidos.RemoveAt(i); // Utiliza RemoveAt para eliminar por índice
+                        cont++;
 
-                   // }
+                    }
+
                 }
-                else
-                {
-                    elegidos[i].deathPer = elegidos[i].deathPer + 10;
-                }
+                Console.WriteLine("Han muerto " + cont + " personajes");
             }
-            Console.WriteLine("Han muerto " + cont + " personajes");
+            
+            if(contSmith==1){
+                for (int i = elegidos.Count - 1; i >= 0; i--)
+                {
+
+                    if (Personaje.SuperaPorcentajeMuerte(elegidos[i].deathPer))
+                    {
+                        elegidos.RemoveAt(i); // Utiliza RemoveAt para eliminar por índice
+                        cont++;
+
+                    }
+                    else
+                    {
+                        elegidos[i].deathPer = elegidos[i].deathPer + 10;
+                    }
+                }
+                Console.WriteLine("Han muerto " + cont + " personajes por el virus");
+            }
+
+           
 
             return elegidos;
         }

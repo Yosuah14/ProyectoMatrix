@@ -3,6 +3,7 @@ using System.Collections.Generic;
 int cont=0;
 int conts=0;
 int muertos = 0;
+int contSmith = 1;
 Neo neo;
 Smith smith;
 NeoFactory n = new NeoFactory();
@@ -25,20 +26,23 @@ matrixf.ImprimirMatriz(matrix.MatrixArray);
 do
 {
      muertos = matrix.contarMuertos(elegidos);
-     elegidos = matrix.EliminarCiu(elegidos,smith);
+     elegidos = matrix.EliminarCiu(elegidos,smith,conts,contSmith);
      elegidos = p.RegenerarPersonajes(personajes, elegidos, muertos);
-     matrix = matrixf.InicializarMatrizConPersonajes(elegidos, neo, smith);
-     matrixf.ImprimirMatriz(matrix.MatrixArray);
+   //  matrix = matrixf.InicializarMatrizConPersonajes(elegidos, neo, smith);
+   //  matrixf.ImprimirMatriz(matrix.MatrixArray);
     if (conts%2==0)
     {
         smith = smith.movimientoSmith(neo, smith, elegidos, matrixf, matrix);
+        muertos = matrix.contarMuertos(elegidos);
+        contSmith = 0;
+        elegidos = matrix.EliminarCiu(elegidos, smith, conts,contSmith);
+        contSmith = 1;
+        elegidos = matrix.EliminarCiu(elegidos, smith, conts, contSmith);
+        elegidos = p.RegenerarPersonajes(personajes, elegidos, muertos);
         matrix = matrixf.InicializarMatrizConPersonajes(elegidos, neo, smith);
         matrixf.ImprimirMatriz(matrix.MatrixArray);
 
-    }
-   
-
-    
+    }      
     if (conts % 5==0)
     {
         neo = neo.moverNeo(neo);
