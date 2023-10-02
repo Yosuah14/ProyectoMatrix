@@ -22,8 +22,8 @@ namespace MATRIX_JOSE
 
             string code = "C" + RandomClass.numale(100, coden).ToString();
 
-            int length = RandomClass.numale(0, 14);
-            int latitude = RandomClass.numale(0, 14);
+            int length = RandomClass.numale(1, 14);
+            int latitude = RandomClass.numale(1, 14);
            
             int capinf = s.infectar();
             s = new Smith(namep, namec, age, code, deathPer, length, latitude, capinf);

@@ -34,7 +34,7 @@ namespace MATRIX_JOSE
         /*
          * Metodo que de la lista de elegidos comprueba cual tiene la probabilidad de morir pone su nombre en nada para distingirlo
          * */
-        public List<Personaje> EliminarCiu(List<Personaje> elegidos)
+        public List<Personaje> EliminarCiu(List<Personaje> elegidos,Smith s,int conts)
         {
             int cont = 0;
             for (int i = elegidos.Count - 1; i >= 0; i--)
@@ -43,6 +43,12 @@ namespace MATRIX_JOSE
                 {
                     elegidos.RemoveAt(i); // Utiliza RemoveAt para eliminar por índice
                     cont++;
+                   // if(elegidos[i].latitude == s.latitude && elegidos[i].length == s.length&&conts==2)
+                   // {
+                     //   elegidos.RemoveAt(i); // Utiliza RemoveAt para eliminar por índice
+                      //  cont++;
+
+                   // }
                 }
                 else
                 {

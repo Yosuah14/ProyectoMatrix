@@ -24,12 +24,22 @@ matrixf.ImprimirMatriz(matrix.MatrixArray);
 
 do
 {
-    muertos = matrix.contarMuertos(elegidos);
-    elegidos = matrix.EliminarCiu(elegidos);
-    elegidos = p.RegenerarPersonajes(personajes, elegidos, muertos);
-    matrix = matrixf.InicializarMatrizConPersonajes(elegidos, neo, smith);
-    matrixf.ImprimirMatriz(matrix.MatrixArray);
-    if (conts % 2==0)
+     muertos = matrix.contarMuertos(elegidos);
+     elegidos = matrix.EliminarCiu(elegidos,smith);
+     elegidos = p.RegenerarPersonajes(personajes, elegidos, muertos);
+     matrix = matrixf.InicializarMatrizConPersonajes(elegidos, neo, smith);
+     matrixf.ImprimirMatriz(matrix.MatrixArray);
+    if (conts%2==0)
+    {
+        smith = smith.movimientoSmith(neo, smith, elegidos, matrixf, matrix);
+        matrix = matrixf.InicializarMatrizConPersonajes(elegidos, neo, smith);
+        matrixf.ImprimirMatriz(matrix.MatrixArray);
+
+    }
+   
+
+    
+    if (conts % 5==0)
     {
         neo = neo.moverNeo(neo);
         matrix = matrixf.InicializarMatrizConPersonajes(elegidos, neo, smith);

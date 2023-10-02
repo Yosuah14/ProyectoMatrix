@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jose1\\Desktop\\MATRIX\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
+      "projectUniqueName": "C:\\Users\\jose1\\Desktop\\ma\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
       "projectName": "MATRIX_JOSE",
-      "projectPath": "C:\\Users\\jose1\\Desktop\\MATRIX\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
+      "projectPath": "C:\\Users\\jose1\\Desktop\\ma\\MATRIX_JOSE\\MATRIX_JOSE\\MATRIX_JOSE.csproj",
       "packagesPath": "C:\\Users\\jose1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jose1\\Desktop\\MATRIX\\MATRIX_JOSE\\MATRIX_JOSE\\obj\\",
+      "outputPath": "C:\\Users\\jose1\\Desktop\\ma\\MATRIX_JOSE\\MATRIX_JOSE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jose1\\AppData\\Roaming\\NuGet\\NuGet.Config",

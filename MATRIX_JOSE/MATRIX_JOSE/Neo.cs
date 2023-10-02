@@ -27,8 +27,8 @@ namespace MATRIX_JOSE
             neo.elegido = neo.esElegido();   
             if (neo.esElegido())
             {
-                neo.latitude= RandomClass.numale(0, 14);
-                neo.length = RandomClass.numale(0, 14);
+                neo.latitude= RandomClass.numale(1, 14);
+                neo.length = RandomClass.numale(1, 14);
                 Console.WriteLine("NEO ES ELEGIDO");
             }
             else
