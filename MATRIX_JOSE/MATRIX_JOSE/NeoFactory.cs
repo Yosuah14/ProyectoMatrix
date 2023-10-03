@@ -13,7 +13,7 @@ namespace MATRIX_JOSE
         {           
             int coden = 1000;
             int deathPer;
-            string namep = "NEOA";
+            string namep = "NEOO";
             string namec = PersonajeFactory.generarCiudad();
             int age = RandomClass.numale(1, 75);
             deathPer = 0;

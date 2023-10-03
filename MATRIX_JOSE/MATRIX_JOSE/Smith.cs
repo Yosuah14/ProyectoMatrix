@@ -134,8 +134,6 @@ namespace MATRIX_JOSE
             }
             return s;
         }
-        // public
-
-        //}
+        
     }
 }

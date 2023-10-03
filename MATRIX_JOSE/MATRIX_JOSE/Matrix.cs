@@ -34,29 +34,13 @@ namespace MATRIX_JOSE
         /*
          * Metodo que de la lista de elegidos comprueba cual tiene la probabilidad de morir pone su nombre en nada para distingirlo
          * */
-        public List<Personaje> EliminarCiu(List<Personaje> elegidos,Smith s,int conts,int contSmith)
+        public List<Personaje> EliminarCiu(List<Personaje> elegidos,Smith s,int conts)
         {
-            int cont = 0;
-            if (conts % 2 == 0&&contSmith==0)
-            {
-                for (int i = elegidos.Count - 1; i >= 0; i--)
-                {
-                    if (elegidos[i].latitude == s.latitude && elegidos[i].length == s.length && conts == 2)
-                    {
-                        elegidos.RemoveAt(i); // Utiliza RemoveAt para eliminar por índice
-                        cont++;
-
-                    }
-
-                }
-                Console.WriteLine("Han muerto " + cont + " personajes");
-            }
-            
-            if(contSmith==1){
+            int cont = 0; 
                 for (int i = elegidos.Count - 1; i >= 0; i--)
                 {
 
-                    if (Personaje.SuperaPorcentajeMuerte(elegidos[i].deathPer))
+                    if (elegidos[i].deathPer>70)
                     {
                         elegidos.RemoveAt(i); // Utiliza RemoveAt para eliminar por índice
                         cont++;
@@ -68,7 +52,7 @@ namespace MATRIX_JOSE
                     }
                 }
                 Console.WriteLine("Han muerto " + cont + " personajes por el virus");
-            }
+            
 
            
 

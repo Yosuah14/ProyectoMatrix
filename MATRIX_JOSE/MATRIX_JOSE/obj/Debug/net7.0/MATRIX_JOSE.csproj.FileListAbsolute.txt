@@ -96,3 +96,17 @@ C:\Users\jose1\Desktop\ma\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\refint\MATRIX
 C:\Users\jose1\Desktop\ma\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\MATRIX_JOSE.pdb
 C:\Users\jose1\Desktop\ma\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\MATRIX_JOSE.genruntimeconfig.cache
 C:\Users\jose1\Desktop\ma\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\ref\MATRIX_JOSE.dll
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\bin\Debug\net7.0\MATRIX_JOSE.exe
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\bin\Debug\net7.0\MATRIX_JOSE.deps.json
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\bin\Debug\net7.0\MATRIX_JOSE.runtimeconfig.json
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\bin\Debug\net7.0\MATRIX_JOSE.dll
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\bin\Debug\net7.0\MATRIX_JOSE.pdb
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\MATRIX_JOSE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\MATRIX_JOSE.AssemblyInfoInputs.cache
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\MATRIX_JOSE.AssemblyInfo.cs
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\MATRIX_JOSE.csproj.CoreCompileInputs.cache
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\MATRIX_JOSE.dll
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\refint\MATRIX_JOSE.dll
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\MATRIX_JOSE.pdb
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\MATRIX_JOSE.genruntimeconfig.cache
+C:\Users\jose1\Desktop\matrixdefinitiva\MATRIX_JOSE\MATRIX_JOSE\obj\Debug\net7.0\ref\MATRIX_JOSE.dll

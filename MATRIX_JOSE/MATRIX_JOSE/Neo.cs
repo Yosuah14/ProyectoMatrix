@@ -16,7 +16,7 @@ namespace MATRIX_JOSE
         {
             this.elegido = elegido;
         }
-        private bool esElegido()
+        public bool esElegido()
         {
             Random random = new Random();
             int resultado = random.Next(0, 2); // Genera un número aleatorio entre 0 y 1 (0 inclusive, 2 excluido)
@@ -25,16 +25,11 @@ namespace MATRIX_JOSE
         }
         public Neo moverNeo(Neo neo) {
             neo.elegido = neo.esElegido();   
-            if (neo.esElegido())
-            {
+     
                 neo.latitude= RandomClass.numale(1, 14);
                 neo.length = RandomClass.numale(1, 14);
-                Console.WriteLine("NEO ES ELEGIDO");
-            }
-            else
-            {
-                Console.WriteLine("NEO NO ES ELEGIDO");
-            }
+                
+            
             return neo;
         }
 
