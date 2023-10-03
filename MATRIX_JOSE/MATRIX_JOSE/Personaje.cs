@@ -8,7 +8,7 @@ namespace MATRIX_JOSE
 {
     public class Personaje
     {
-        
+
         public string namep { get; set; }
         private string namec { get; set; }
         private int age { get; set; }

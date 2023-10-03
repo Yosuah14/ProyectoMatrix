@@ -16,15 +16,10 @@ namespace MATRIX_JOSE
             string namep = "SMTH";
             string namec = PersonajeFactory.generarCiudad();
             int age = RandomClass.numale(1, 75);
-
-
             deathPer = 0;
-
             string code = "C" + RandomClass.numale(100, coden).ToString();
-
             int length = RandomClass.numale(1, 14);
             int latitude = RandomClass.numale(1, 14);
-           
             int capinf = s.infectar();
             s = new Smith(namep, namec, age, code, deathPer, length, latitude, capinf);
             return s;

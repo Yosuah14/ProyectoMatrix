@@ -56,7 +56,7 @@ namespace MATRIX_JOSE
          * */
         public List<Personaje> Generar30PersonajesAleatorios(List<Personaje> personajes200)
         {
-           
+
 
             Random rand = new Random();
             List<Personaje> personajesAleatorios = new List<Personaje>();
@@ -82,19 +82,16 @@ namespace MATRIX_JOSE
          * Metodo que una vez se mueran los de la matriz de elegidos mete los restantes hasta llegar otra vez a 30
          * */
 
-        public List<Personaje> RegenerarPersonajes(List<Personaje> personajes200, List<Personaje> elegidos,int cont)
+        public List<Personaje> RegenerarPersonajes(List<Personaje> personajes200, List<Personaje> elegidos, int cont)
         {
-
             Random rand = new Random();
-            
-
             for (int i = 0; i < cont; i++)
             {
                 int indiceAleatorio = rand.Next(personajes200.Count);
 
 
                 // Generar un índice aleatorio dentro del rango de la lista de 200 personajes
-                if (indiceAleatorio!=0)
+                if (indiceAleatorio != 0)
                 {
                     Personaje personajeAleatorio = personajes200[indiceAleatorio];
                     elegidos.Add(personajeAleatorio);
@@ -102,13 +99,9 @@ namespace MATRIX_JOSE
 
                     // Eliminar el personaje de la lista original
                     personajes200.RemoveAt(indiceAleatorio);
-
                 }
-
                 // Obtener el personaje aleatorio y agregarlo a la lista de personajes aleatorios
-
             }
-
             return elegidos;
 
         }

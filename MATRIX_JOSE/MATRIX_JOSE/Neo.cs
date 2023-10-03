@@ -24,6 +24,7 @@ namespace MATRIX_JOSE
           return  (resultado == 1); // Cambia el valor de elegido a true si el resultado es 1, false si es 0
         }
         public Neo moverNeo(Neo neo) {
+            
             neo.elegido = neo.esElegido();   
      
                 neo.latitude= RandomClass.numale(1, 14);

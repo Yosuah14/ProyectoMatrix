@@ -14,7 +14,7 @@ namespace MATRIX_JOSE
             {
                 for (int j = 0; j < matriz.GetLength(1); j++)
                 {
-                    if (matriz[i, j] != null && (matriz[i, j].Contains('C')|| matriz[i, j].Contains('S')|| matriz[i, j].Contains('N')))
+                    if (matriz[i, j] != null && (matriz[i, j].Contains('C') || matriz[i, j].Contains('S') || matriz[i, j].Contains('N')))
                     {
                         Console.Write("[" + matriz[i, j] + "]"); // Imprimir "." si no hay un personaje en esa posición
                         Console.Write("   ");
@@ -23,10 +23,8 @@ namespace MATRIX_JOSE
                     {
                         Console.Write("[" + matriz[i, j] + "]"); // Imprimir "." si no hay un personaje en esa posición
                         Console.Write("       ");
-
                     }
-                    
-                   
+
                 }
                 Console.WriteLine();
             }
@@ -48,12 +46,12 @@ namespace MATRIX_JOSE
                 int longitud = personaje.length;
                 matrix[latitude, longitud] = personaje.code;
             }
-            matrix[neo.latitude, neo.length]= neo.namep;
+            matrix[neo.latitude, neo.length] = neo.namep;
             matrix[smith.latitude, smith.length] = smith.namep;
 
             return new Matrix(matrix);
         }
-        
+
 
 
 
