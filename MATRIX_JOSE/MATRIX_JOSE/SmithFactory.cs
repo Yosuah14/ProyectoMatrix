@@ -8,8 +8,13 @@ namespace MATRIX_JOSE
 {
     public class SmithFactory
     {
-        public Smith generarSmith(string[,] matrix)
+        /*
+        *Genera a Neo y comprueba que no sea la misma posicon de smith
+        */
+        public Smith generarSmith(string[,] matrix, Neo neo)
         {
+            int latitude = 0;
+            int length = 0;
             Smith s = new Smith();
             int coden = 1000;
             int deathPer;
@@ -18,8 +23,15 @@ namespace MATRIX_JOSE
             int age = RandomClass.numale(1, 75);
             deathPer = 0;
             string code = "C" + RandomClass.numale(100, coden).ToString();
-            int length = RandomClass.numale(1, 14);
-            int latitude = RandomClass.numale(1, 14);
+            do
+            {
+                length = RandomClass.numale(1, 14);
+            } while (length == neo.length);
+            do
+            {
+                latitude = RandomClass.numale(1, 14);
+            } while (latitude == neo.latitude);
+
             int capinf = s.infectar();
             s = new Smith(namep, namec, age, code, deathPer, length, latitude, capinf);
             return s;

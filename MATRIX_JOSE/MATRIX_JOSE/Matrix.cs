@@ -57,6 +57,9 @@ namespace MATRIX_JOSE
 
             return elegidos;
         }
+        /*
+         * Metodo que cuenta los muertos para saber cuantos hay que regenerar
+         * */
         public int contarMuertos(List<Personaje> elegidos)
         {
             int cont = 0;

@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace MATRIX_JOSE
 {
+    /*
+     *Genera a Neo
+     */
     public class NeoFactory
     {
         public Neo generarNeo(string[,] matrix)
@@ -24,7 +27,5 @@ namespace MATRIX_JOSE
             Neo n = new Neo(namep, namec, age, code, deathPer, length, latitude,elegido);
             return n;
         }
-
-
     }
 }

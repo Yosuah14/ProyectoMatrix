@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace MATRIX_JOSE
 {
+    /*
+     * Clase Personaje que tiene un metodo
+     * de porcentaje de muerte
+     * */
     public class Personaje
     {
 
@@ -18,11 +22,9 @@ namespace MATRIX_JOSE
         public int length { get; set; }
 
         public int latitude { get; set; }
+        //Constructor vacio
         public Personaje()
-        {
-
-        }
-
+        {}
         public Personaje(string namep, string namec, int age, string code, int deathPer, int length, int latitude)
         {
             this.namep = namep;
@@ -37,7 +39,5 @@ namespace MATRIX_JOSE
         {
             return deathPer > 70;
         }
-
-
     }
 }

@@ -18,11 +18,18 @@ namespace MATRIX_JOSE
         {
             this.capInf = capinf;
         }
+        /*
+         * Habilidad de smith 
+         */
         public int infectar()
         {
             int inf = RandomClass.numale(1, 5);
             return inf = this.capInf;
         }
+        /*
+         * Movimiento de smith en funcion de la posicion de neo
+         * 
+         */
 
         public Smith movimientoSmith(Neo n, Smith s, List<Personaje> elegidos, MatrixFactory matrixf, Matrix matrix)
 
@@ -55,12 +62,17 @@ namespace MATRIX_JOSE
                     matrix = matrixf.InicializarMatrizConPersonajes(elegidos, n, s);
                     matrixf.ImprimirMatriz(matrix.MatrixArray);
 
-                    if (!(s.latitude == n.latitude + 1 && s.length == n.length + 1) || !(s.latitude == n.latitude - 1 && s.length == n.length - 1) || !(s.latitude == n.latitude - 1 && s.length == n.length + 1) || !(s.latitude == n.latitude + 1 && s.length == n.length - 1))
+                    if ((s.latitude == n.latitude + 1 && s.length == n.length + 1) || (s.latitude == n.latitude - 1 && s.length == n.length - 1) || (s.latitude == n.latitude - 1 && s.length == n.length + 1) || (s.latitude == n.latitude + 1 && s.length == n.length - 1))
+                    {
+                        return s;
+                    }
+                    else
                     {
                         s.latitude = s.latitude + 1;
                         s.length = s.length + 1;
+                        return s;
                     }
-                    return s;
+
                 }
                 if (n.latitude < s.latitude)
                 {
@@ -69,12 +81,17 @@ namespace MATRIX_JOSE
                     matrix = matrixf.InicializarMatrizConPersonajes(elegidos, n, s);
                     matrixf.ImprimirMatriz(matrix.MatrixArray);
 
-                    if (!(s.latitude == n.latitude + 1 && s.length == n.length + 1) || !(s.latitude == n.latitude - 1 && s.length == n.length - 1) || !(s.latitude == n.latitude - 1 && s.length == n.length + 1) || !(s.latitude == n.latitude + 1 && s.length == n.length - 1))
+                    if ((s.latitude == n.latitude + 1 && s.length == n.length + 1) || (s.latitude == n.latitude - 1 && s.length == n.length - 1) || (s.latitude == n.latitude - 1 && s.length == n.length + 1) || (s.latitude == n.latitude + 1 && s.length == n.length - 1))
+                    {
+                        return s;
+                    }
+                    else
                     {
                         s.latitude = s.latitude - 1;
                         s.length = s.length + 1;
+                        return s;
                     }
-                    return s;
+
 
                 }
                 if (n.length < s.length)
@@ -83,12 +100,17 @@ namespace MATRIX_JOSE
                     s.length = s.length - 1;
                     matrix = matrixf.InicializarMatrizConPersonajes(elegidos, n, s);
                     matrixf.ImprimirMatriz(matrix.MatrixArray);
-                    if (!(s.latitude == n.latitude + 1 && s.length == n.length + 1) || !(s.latitude == n.latitude - 1 && s.length == n.length - 1) || !(s.latitude == n.latitude - 1 && s.length == n.length + 1) || !(s.latitude == n.latitude + 1 && s.length == n.length - 1))
+                    if ((s.latitude == n.latitude + 1 && s.length == n.length + 1) || (s.latitude == n.latitude - 1 && s.length == n.length - 1) || (s.latitude == n.latitude - 1 && s.length == n.length + 1) || (s.latitude == n.latitude + 1 && s.length == n.length - 1))
+                    {
+                        return s;
+                    }
+                    else
                     {
                         s.latitude = s.latitude + 1;
                         s.length = s.length - 1;
+                        return s;
                     }
-                    return s;
+
 
                 }
                 if (n.length > s.length)
@@ -98,12 +120,17 @@ namespace MATRIX_JOSE
                     matrix = matrixf.InicializarMatrizConPersonajes(elegidos, n, s);
                     matrixf.ImprimirMatriz(matrix.MatrixArray);
 
-                    if (!(s.latitude == n.latitude + 1 && s.length == n.length + 1) || !(s.latitude == n.latitude - 1 && s.length == n.length - 1) || !(s.latitude == n.latitude - 1 && s.length == n.length + 1) || !(s.latitude == n.latitude + 1 && s.length == n.length - 1))
+                    if ((s.latitude == n.latitude + 1 && s.length == n.length + 1) || (s.latitude == n.latitude - 1 && s.length == n.length - 1) || (s.latitude == n.latitude - 1 && s.length == n.length + 1) || (s.latitude == n.latitude + 1 && s.length == n.length - 1))
+                    {
+                        return s;
+                    }
+                    else
                     {
                         s.latitude = s.latitude + 1;
                         s.length = s.length + 1;
+                        return s;
                     }
-                    return s;
+
 
 
                 }

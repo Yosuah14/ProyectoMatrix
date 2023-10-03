@@ -1,4 +1,0 @@
-C:\Users\Alumno\Desktop\PROYECTO_MATRIX\CsharpJoseMatrix\CsharpJoseMatrix\obj\Debug\net7.0\CsharpJoseMatrix.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Alumno\Desktop\PROYECTO_MATRIX\CsharpJoseMatrix\CsharpJoseMatrix\obj\Debug\net7.0\CsharpJoseMatrix.AssemblyInfoInputs.cache
-C:\Users\Alumno\Desktop\PROYECTO_MATRIX\CsharpJoseMatrix\CsharpJoseMatrix\obj\Debug\net7.0\CsharpJoseMatrix.AssemblyInfo.cs
-C:\Users\Alumno\Desktop\PROYECTO_MATRIX\CsharpJoseMatrix\CsharpJoseMatrix\obj\Debug\net7.0\CsharpJoseMatrix.csproj.CoreCompileInputs.cache
