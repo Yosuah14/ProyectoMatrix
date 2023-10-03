@@ -45,7 +45,7 @@ do
             matrix = matrixf.InicializarMatrizConPersonajes(elegidos, neo, smith);
             matrixf.ImprimirMatriz(matrix.MatrixArray);
         }
-        if ((conts == 5 || conts == 10 || conts == 15 || conts == 20 &&( muertos != 0)))
+        if (conts == 6 || conts == 11 || conts == 16 || conts == 21 )
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("TURNO DE NEO");
