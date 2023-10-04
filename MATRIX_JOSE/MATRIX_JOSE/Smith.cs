@@ -135,7 +135,7 @@ namespace MATRIX_JOSE
 
                 }
             }
-            //Sino es adyacente ni esta en una fila o columna igual que neo se movera normal se movera normal en diagonal
+            //Sino es adyacente ni esta en una fila o columna igual que neo se movera normal  en diagonal
             else
             {
                 if ((n.latitude > s.latitude) && (n.length > s.length))

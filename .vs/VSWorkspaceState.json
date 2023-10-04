@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MATRIX_JOSE",
+    "\\MATRIX_JOSE\\MATRIX_JOSE"
   ],
-  "SelectedNode": "\\Resultados-Compilación.txt",
+  "SelectedNode": "\\MATRIX_JOSE\\MATRIX_JOSE\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

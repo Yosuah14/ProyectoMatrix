@@ -25,6 +25,7 @@ matrixf.ImprimirMatriz(matrix.MatrixArray);
 //Iniciamos el bucle
 do
 {
+    Console.WriteLine("Llevas " + conts + " segundos");
     if ((elegidos.Count != 21))
     {
         //Cuento los muertos por el porcentaje de muerte
