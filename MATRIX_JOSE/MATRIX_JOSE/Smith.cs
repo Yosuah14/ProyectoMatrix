@@ -37,14 +37,11 @@ namespace MATRIX_JOSE
 
             if ((s.latitude == n.latitude + 1 && s.length == n.length + 1) || (s.latitude == n.latitude - 1 && s.length == n.length - 1) || (s.latitude == n.latitude - 1 && s.length == n.length + 1) || (s.latitude == n.latitude + 1 && s.length == n.length - 1))
             {
-                Console.WriteLine("NEO Y SMITH SON ADYACENTES HAS QUE NEO NO SE MUEVA SMITH TAMPOCO");
-                //vemos si estan en la misma fila o columna para que smith se mueva en zig zag
                 return s;
             }
             //Comprobamos que neo no es al lado de las casillas no adyacentes
             if ((s.latitude == n.latitude + 1 && s.length == n.length || (s.latitude == n.latitude - 1 && s.length == n.length) || (s.latitude == n.latitude && s.length == n.length + 1) || (s.latitude == n.latitude && s.length == n.length - 1)))
             {
-                Console.WriteLine("SMITH ESTA AL LADO DE NEO EN UNA CASILLA NO ADYACENTE,HASTA QUE NEO NO SE MUEVA NO SEGUIRA EL JUEGO");
                 return s;
             }
 
